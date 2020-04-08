@@ -1,0 +1,220 @@
+.App {
+  text-align: left;
+  font-size: 0.6em !important;
+  font-family: "Courier New", Courier, monospace !important;
+}
+
+.App-logo {
+  height: 8vmin;
+  pointer-events: none;
+}
+
+/* @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  } */
+
+/* @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: micro-phone-pulse infinite 20s linear;
+    }
+  } */
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.container {
+  position: relative;
+  border: 1px solid #f2efe2;
+  width: 40vw;
+  max-width: 60vw;
+  margin: 0 auto;
+  border-radius: 0.1rem;
+  background: #f2efe2;
+  padding: 0.2rem 1rem;
+  color: #1e2440;
+  overflow: scroll;
+  margin-top: 10vh;
+}
+.text-box {
+  max-height: 70vh;
+  overflow: scroll;
+}
+.text-box:focus {
+  outline: none;
+}
+.text-box p {
+  border-bottom: 1px dotted black;
+  margin: 0px !important;
+}
+.fa {
+  color: white;
+  background: #1e2440;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: 1rem;
+  float: right;
+  width: 2rem;
+  height: 2rem;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes micro-phone-pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+  }
+  70% {
+    -moz-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+    box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+  }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 85vw;
+    max-width: 85vw;
+  }
+  .text-box {
+    max-height: 55vh;
+  }
+}
+
+/*************************
+  /* PULSE ANIMATION
+  /************************/
+
+.pulse {
+  margin: 40px;
+  padding: 10px;
+  display: block;
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  background: #cca92c66;
+  cursor: pointer;
+  box-shadow: 0 0 0 #cca92c66;
+  outline: none;
+}
+
+.pulse-active {
+  animation: pulse 1s infinite;
+  outline: none;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+  }
+  70% {
+    -webkit-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+  }
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+  }
+  70% {
+    -moz-box-shadow: 0 0 0 50px rgba(204, 169, 44, 0);
+    box-shadow: 0 0 0 50px rgba(204, 169, 44, 0);
+  }
+  100% {
+    -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+    box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+  }
+}
+
+.micStatus {
+  position: relative;
+  top: 50%;
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  /* font-size: 180%; */
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+}
+
+.upload {
+  margin: 10px;
+  border-radius: 10px;
+  background: #800080;
+  padding: 10px;
+  font-size: 0.6em;
+  color: #fff;
+}
+
+button {
+  font-family: "Roboto medium", sans-serif;
+  font-size: 14px;
+  display: inline-block;
+  height: 36px;
+  min-width: 88px;
+  padding: 6px 16px;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 0;
+  border-radius: 2px;
+  background: rgba(103, 58, 183, 1);
+  color: #fff;
+  outline: 0;
+}
+
+button:disabled {
+  background: rgb(189, 189, 189);
+  cursor: default;
+}
+
+.title {
+  font-size: large;
+}
+
+.redHeader {
+  color: tomato;
+}
+
+.greenHeader {
+  color: forestgreen;
+}
